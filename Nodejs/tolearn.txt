@@ -1,0 +1,48 @@
+very important learn git of leksmis friend
+view vishnus notes
+
+
+-worker thread
+-jwt
+-cluster
+-spawn
+-fork
+-exec
+-execfile
+-middlewares
+-cores
+-ratelimitter
+-find path
+-parse url
+---dirname --filename
+
+
+
+js
+find nonrepeating element from array
+call apply bind
+promise
+const ab=[6,9,0,6,12,4,65] op-9,12,6,12,4,65
+proxy
+unfreeze
+freeze
+object.defineproperties
+
+
+
+
+
+*react*
+count charecter while entering in input field max of 10 charecters(limit)
+
+DS
+longest common prefix using trie
+fibonacci series to print
+sum of array using recursion with 
+graph BFS DFS
+merge sort
+pattern
+
+
+
+

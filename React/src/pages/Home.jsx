@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import CounterRedux from '../components/CounterRedux'
 import ChildToParent from '../components/ChildToParent'
 import ContextCounter from '../components/ContextCounter'
@@ -13,6 +13,27 @@ import AutoCompletion from '../components/AutoCompletion'
 import ToDoList from '../components/ToDoList'
 
 const Home = () => {
+
+  useEffect(()=>{
+    const fetchurl=()=>{
+      fetch('http://localhost:3000/protected',{
+        method:'GET',
+        headers:{
+          'Content-Type':'application/json',
+          'Authorization':'Bearer mytoken'
+        }
+      })
+      .then(res=>res.json())
+      .then(data=>{
+        console.log(data)
+      })
+      .catch(e=>{
+        clg(e)
+      })
+    }
+    fetchurl();
+
+  })
   const textref=useRef(null)
   const handleChange=()=>{
     console.log('ref triggered')
